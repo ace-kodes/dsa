@@ -12,23 +12,23 @@
 package basic_java;
 
 public class Basics {
-    public static void main(String[] args) {
-        System.out.prin    s1.equals(s2);   // Always true (checks content)
-  ```
-  - ☐ **Integer vs int**: `int` is primitive, `Integer` is wrapper class
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+```
+
+- [ ] **Integer vs int**: `int` is primitive, `Integer` is wrapper class
     ```java
     List<Integer> list = new ArrayList<>();  // Use Integer, not int
     ```
-  - ☐ **Collections.max() and Collections.min()**
+  - [ ] **Collections.max() and Collections.min()**
     ```java
     int max = Collections.max(list);
     int min = Collections.min(list);
     ```
 
-- ☐ **Lambda Expressions (Java 8+) - Optional but useful**orld!");
-    }
-}
-```
+- [ ] **Lambda Expressions (Java 8+) - Optional but useful**
 
 **In Layman's Terms:**
 
@@ -54,16 +54,17 @@ public class Basics {
 
 ## Part 2: 2-3 Day Java Learning Plan for DSA
 
-### **Day 1: Java Fundamentals & Syntax Basics**
+<details>
+<summary><strong>Day 1: Java Fundamentals & Syntax Basics</strong></summary>
 
 #### Morning (2-3 hours)
 
-- ☐ **Java Environment Setup**
-  - ☐ Understand JDK (Java Development Kit) vs JRE (Java Runtime Environment)
-  - ☐ Know that Java is compiled to bytecode (.class files) then interpreted by JVM
-  - ☐ Compare to C#: JVM is like .NET CLR, bytecode is like IL (Intermediate Language)
+- [ ] **Java Environment Setup**
+  - [ ] Understand JDK (Java Development Kit) vs JRE (Java Runtime Environment)
+  - [ ] Know that Java is compiled to bytecode (.class files) then interpreted by JVM
+  - [ ] Compare to C#: JVM is like .NET CLR, bytecode is like IL (Intermediate Language)
 
-- ☐ **Primitive Data Types**
+- [ ] **Primitive Data Types**
   ```java
   byte b = 127;          // 8-bit signed integer (-128 to 127)
   short s = 32000;       // 16-bit signed integer
@@ -78,11 +79,11 @@ public class Basics {
   ```
   - **C# Comparison**: Similar types but different names (int, float, double, bool, char)
 
-- ☐ **Variable Declaration & Naming**
-  - ☐ Naming conventions: camelCase for variables (e.g., `myVariable`)
-  - ☐ Constants: use `static final` (C# equivalent: `const` or `readonly`)
+- [ ] **Variable Declaration & Naming**
+  - [ ] Naming conventions: camelCase for variables (e.g., `myVariable`)
+  - [ ] Constants: use `static final` (C# equivalent: `const` or `readonly`)
 
-- ☐ **Type Casting**
+- [ ] **Type Casting**
   ```java
   int x = 10;
   double y = (double) x;  // Explicit casting (widening)
@@ -91,9 +92,9 @@ public class Basics {
 
 #### Afternoon (2-3 hours)
 
-- ☐ **Control Flow Statements**
-  - ☐ `if-else` statements (same as C#)
-  - ☐ `switch` statements (similar to C#, but Java doesn't have switch expressions until Java 12)
+- [ ] **Control Flow Statements**
+  - [ ] `if-else` statements (same as C#)
+  - [ ] `switch` statements (similar to C#, but Java doesn't have switch expressions until Java 12)
   ```java
   switch(day) {
       case 1:
@@ -107,14 +108,14 @@ public class Basics {
   }
   ```
 
-- ☐ **Loops**
-  - ☐ `for` loop: `for(int i = 0; i < 10; i++) { }`
-  - ☐ `while` loop: `while(condition) { }`
-  - ☐ `do-while` loop: `do { } while(condition);`
-  - ☐ **Enhanced for loop** (for-each): `for(int num : array) { }`
+- [ ] **Loops**
+  - [ ] `for` loop: `for(int i = 0; i < 10; i++) { }`
+  - [ ] `while` loop: `while(condition) { }`
+  - [ ] `do-while` loop: `do { } while(condition);`
+  - [ ] **Enhanced for loop** (for-each): `for(int num : array) { }`
     - *C# Equivalent*: `foreach(int num in array) { }`
 
-- ☐ **Methods/Functions**
+- [ ] **Methods/Functions**
   ```java
   public static int add(int a, int b) {
       return a + b;
@@ -122,18 +123,21 @@ public class Basics {
   ```
   - **C# Comparison**: Same concept, but Java uses `static` for class methods explicitly
 
-- ☐ **Key Differences from C#**
-  - ☐ No implicit `using` directives; import what you need: `import java.util.*;`
-  - ☐ No properties with getters/setters shorthand (until Java 14+ records)
-  - ☐ No async/await built-in (threading is different)
+- [ ] **Key Differences from C#**
+  - [ ] No implicit `using` directives; import what you need: `import java.util.*;`
+  - [ ] No properties with getters/setters shorthand (until Java 14+ records)
+  - [ ] No async/await built-in (threading is different)
+
+</details>
 
 ---
 
-### **Day 2: Collections & Object-Oriented Programming**
+<details>
+<summary><strong>Day 2: Collections & Object-Oriented Programming</strong></summary>
 
 #### Morning (2-3 hours)
 
-- ☐ **Arrays**
+- [ ] **Arrays**
   ```java
   int[] arr = new int[5];           // Size 5, all initialized to 0
   int[] arr2 = {1, 2, 3, 4, 5};     // Literal initialization
@@ -144,7 +148,7 @@ public class Basics {
   ```
   - **Important**: Arrays have fixed size. Use Collections for dynamic sizes.
 
-- ☐ **Collections Framework (Key for DSA!)**
+[ ] **Collections Framework (Key for DSA!)**
   ```java
   import java.util.*;
   
@@ -186,7 +190,7 @@ public class Basics {
     - `HashSet<T>` → `HashSet<T>`
     - `HashMap` → `Dictionary<K, V>`
 
-- ☐ **Generics** (Type Parameters)
+- [ ] **Generics** (Type Parameters)
   ```java
   List<String> names = new ArrayList<>();  // <String> = type parameter
   names.add("Alice");
@@ -203,7 +207,7 @@ public class Basics {
 
 #### Afternoon (2-3 hours)
 
-- ☐ **Classes and Objects**
+- [ ] **Classes and Objects**
   ```java
   public class Person {
       private String name;      // Private field
@@ -237,7 +241,7 @@ public class Basics {
   p.setAge(26);
   ```
 
-- ☐ **Inheritance**
+- [ ] **Inheritance**
   ```java
   public class Animal {
       public void eat() {
@@ -257,7 +261,7 @@ public class Basics {
   ```
   - **C# Comparison**: Uses `extends` instead of `:`
 
-- ☐ **Polymorphism & Method Overriding**
+- [ ] **Polymorphism & Method Overriding**
   ```java
   public class Animal {
       public void sound() {
@@ -273,7 +277,7 @@ public class Basics {
   }
   ```
 
-- ☐ **Interfaces**
+- [ ] **Interfaces**
   ```java
   public interface Drawable {
       void draw();
@@ -288,7 +292,7 @@ public class Basics {
   ```
   - **C# Comparison**: Same as C# interfaces
 
-- ☐ **Abstract Classes**
+- [ ] **Abstract Classes**
   ```java
   public abstract class Shape {
       abstract public void area();  // Abstract method
@@ -306,13 +310,16 @@ public class Basics {
   }
   ```
 
+</details>
+
 ---
 
-### **Day 3: DSA-Specific Patterns & Practice**
+<details>
+<summary><strong>Day 3: DSA-Specific Patterns & Practice</strong></summary>
 
 #### Morning (2-3 hours)
 
-- ☐ **Strings (Important for DSA!)**
+- [ ] **Strings (Important for DSA!)**
   ```java
   String s = "Hello";
   
@@ -337,7 +344,7 @@ public class Basics {
   ```
   - **C# Comparison**: `String` is also immutable; use `StringBuilder` for building strings
 
-- ☐ **Common DSA Patterns**
+- [ ] **Common DSA Patterns**
   ```java
   // 1. Two Pointer Technique
   int[] arr = {1, 2, 3, 4, 5};
@@ -372,10 +379,10 @@ public class Basics {
 
 #### Afternoon (2-3 hours)
 
-- ☐ **Common Gotchas & Tips for DSA**
-  - ☐ **Array vs List**: Arrays have fixed size; Lists are dynamic
-  - ☐ **Null vs 0**: Use null for objects, 0 for primitives
-  - ☐ **String comparison**: Use `.equals()`, NOT `==` (unless checking references)
+- [ ] **Common Gotchas & Tips for DSA**
+  - [ ] **Array vs List**: Arrays have fixed size; Lists are dynamic
+  - [ ] **Null vs 0**: Use null for objects, 0 for primitives
+  - [ ] **String comparison**: Use `.equals()`, NOT `==` (unless checking references)
     ```java
     String s1 = "hello";
     String s2 = "hello";
@@ -408,7 +415,7 @@ public class Basics {
   list.forEach(num -> System.out.println(num));
   ```
 
-- ☐ **Streams API (Java 8+) - Optional but powerful for DSA**
+- [ ] **Streams API (Java 8+) - Optional but powerful for DSA**
   ```java
   import java.util.stream.Collectors;
   
@@ -429,7 +436,7 @@ public class Basics {
       .reduce(0, (a, b) -> a + b);
   ```
 
-- ☐ **Quick Reference: Collections Performance**
+- [ ] **Quick Reference: Collections Performance**
   | Operation | ArrayList | LinkedList | HashSet | HashMap |
   |-----------|-----------|-----------|---------|---------|
   | Add       | O(1)*     | O(1)      | O(1)    | O(1)    |
