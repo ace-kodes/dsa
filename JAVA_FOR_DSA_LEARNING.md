@@ -18,7 +18,7 @@ public class Basics {
 }
 ```
 
-- [ ] **Integer vs int**: `int` is primitive, `Integer` is wrapper class
+  - [ ] **Integer vs int**: `int` is primitive, `Integer` is wrapper class
     ```java
     List<Integer> list = new ArrayList<>();  // Use Integer, not int
     ```
